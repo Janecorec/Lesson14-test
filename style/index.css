@@ -397,3 +397,9 @@ footer .end-slogan {
   letter-spacing: 1.6px;
   margin-top: 8px;
 }
+
+@media screen and (max-width: 767px) {
+  .line1, .line2 {
+    display: none;
+  }
+}
