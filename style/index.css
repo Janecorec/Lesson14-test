@@ -28,7 +28,6 @@ body {
 
 .container {
   margin: auto;
-  background-color: aqua;
   max-width: 1773px;
   width: 100%;
 }
@@ -369,4 +368,32 @@ h6 {
   font-size: 20px;
   line-height: 26px;
   color: #FEFEFE;
+  text-transform: uppercase;
+}
+
+footer {
+  height: 271px;
+  background-color: #232323;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .socials {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+footer .socials a {
+  color: white;
+}
+footer .socials a:hover {
+  color: #5474FD;
+}
+footer .end-slogan {
+  line-height: 26px;
+  letter-spacing: 1.6px;
+  margin-top: 8px;
 }
