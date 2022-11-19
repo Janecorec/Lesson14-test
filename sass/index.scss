@@ -277,12 +277,97 @@ section{
     flex-direction: column;
 }
 
+.box-container{
+    width: 80%;}
+
 .location.one{
     height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: url(/images/house.png);
+    background-size: cover;
+
 }
 
 .location.two{
     height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: url(/images/ocean-sunset.png);
+
+    .box-container{
+        display: flex;
+        justify-content: flex-end;}
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 30px;
+    width: 543px;
+    height: 374px;
+    background-color: rgba(35, 35, 35, .9);
+    color: white;
+
+    h5{
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 1.5px;
+    }
+    
+    h4{
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 0px;
+    }
+
+    p{
+        line-height: 26px;
+    }
+}
+
+.Btn.--book{
+    width: 228px;
+    line-height: 63px;
+}
+
+.testimonials{
+    height: 731px;
+    background-image: url(/images/tourist.png);
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.content{
+    display: flex;
+    color: #E8E8E8;
+    max-width: 1110px;
+    background-color: #333333;
+}
+
+.tourist{
+    margin: 50px;
+    i{
+        float: left;
+        width: 45px;
+        color: $secondary-color;
+        font-size: 2.5rem;
+    }
+
+    p{
+        margin-top: 20px;
+        line-height: 26px;
+    }
+}
+
+h6{
+    font-size: 20px;
+    line-height: 26px;
+    color: #FEFEFE;
 }
