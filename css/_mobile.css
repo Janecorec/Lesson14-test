@@ -1,5 +1,366 @@
 @media screen and (max-width: 767px) {
+  body {
+    background-color: lightgrey;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .Btn {
+    font-family: "Aleo", serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    line-height: 26px;
+    border: none;
+    color: white;
+    background-color: #5474FD;
+  }
+  .Btn:hover {
+    background-color: white;
+    color: #5474FD;
+    text-decoration: underline;
+    transition: all 0.5s;
+  }
+  .container {
+    margin: auto;
+    max-width: 1773px;
+    width: 100%;
+  }
+  .hero {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 821px;
+    background-image: url("/images/mountain.png");
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  h1 {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+  }
+  .slogan {
+    margin-top: 11px;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 6.82px;
+  }
+  .search {
+    display: flex;
+    align-items: center;
+    margin-top: 48px;
+    max-width: 653px;
+    width: 100%;
+    height: 63px;
+    background-color: white;
+    padding: 2px;
+    margin-bottom: 50px;
+  }
+  .searchbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .searchtext {
+    text-align: center;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 2.8px;
+    width: 100%;
+    border: none;
+  }
+  .searchtext:hover {
+    text-decoration: underline;
+  }
+  ::-moz-placeholder {
+    color: #999999;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 2.8px;
+    text-align: center;
+  }
+  ::placeholder {
+    color: #999999;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 2.8px;
+    text-align: center;
+  }
+  .Btn.--search {
+    width: 153px;
+    height: 63px;
+  }
+  i {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  .scroll {
+    margin-top: 50px;
+  }
+  .scroll a {
+    color: white;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 2.8px;
+    text-decoration: none;
+  }
+  .scroll a:hover {
+    color: blue;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 83px;
+    background-color: #5474FD;
+  }
+  .title {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: 2.4px;
+  }
+  .title:hover {
+    text-decoration: underline;
+  }
+  .navigation {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Aleo", serif;
+  }
+  .navigation a {
+    color: white;
+    font-size: 14px;
+    line-height: 26px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .navigation a:hover {
+    text-decoration: underline;
+  }
+  #end {
+    visibility: hidden;
+  }
+  .whychooseus {
+    background-image: url(/images/temple.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    min-height: 685px;
+    height: 100%;
+  }
+  .info {
+    width: 45%;
+    color: white;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .info p {
+    color: #E8E8E8;
+    max-width: 560px;
+    width: 100%;
+    line-height: 26px;
+    letter-spacing: 1.6px;
+  }
+  h2 {
+    font-family: "Aleo", serif;
+    font-size: 36px;
+    line-height: 26px;
+  }
+  .locations {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .locations img {
+    max-width: 350px;
+    width: 100%;
+  }
+  .locations img:nth-child(2) {
+    align-self: flex-end;
+  }
+  .Btn.--explore {
+    width: 228px;
+    height: 63px;
+  }
+  .icon_bar {
+    position: relative;
+    background-color: #333333;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 340px;
+  }
+  .icon_bar p {
+    font-family: "Aleo", serif;
+    color: #E8E8E8;
+    font-size: 36px;
+    line-height: 26px;
+  }
+  .icon_bar__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .icon_bar__icon i {
+    font-size: 4rem;
+  }
+  .icon_bar__icon.first i {
+    color: #5474FD;
+  }
+  .icon_bar__icon.second i {
+    color: #FF6363;
+  }
+  .icon_bar__icon.third i {
+    color: #00A2FF;
+  }
+  .line1 {
+    position: absolute;
+    transform: scale(1.8);
+    top: -180px;
+    left: 550px;
+  }
+  .line2 {
+    position: absolute;
+    transform: scale(1.8);
+    top: -180px;
+    left: 1050px;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+  .box-container {
+    width: 80%;
+  }
+  .location.one {
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/images/house.png);
+    background-size: cover;
+  }
+  .location.two {
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/images/ocean-sunset.png);
+  }
+  .location.two .box-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 30px;
+    width: 543px;
+    height: 374px;
+    background-color: rgba(35, 35, 35, 0.9);
+    color: white;
+  }
+  .box h5 {
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 1.5px;
+  }
+  .box h4 {
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0px;
+  }
+  .box p {
+    line-height: 26px;
+  }
+  .Btn.--book {
+    width: 228px;
+    line-height: 63px;
+  }
+  .testimonials {
+    height: 731px;
+    background-image: url(/images/tourist.png);
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .content {
+    display: flex;
+    color: #E8E8E8;
+    max-width: 1110px;
+    background-color: #333333;
+  }
+  .tourist {
+    margin: 50px;
+  }
+  .tourist i {
+    float: left;
+    width: 45px;
+    color: #5474FD;
+    font-size: 2.5rem;
+  }
+  .tourist p {
+    margin-top: 20px;
+    line-height: 26px;
+  }
+  h6 {
+    font-size: 20px;
+    line-height: 26px;
+    color: #FEFEFE;
+    text-transform: uppercase;
+  }
+  footer {
+    height: 271px;
+    background-color: #232323;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .socials {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+  }
+  footer .socials a {
+    color: white;
+  }
+  footer .socials a:hover {
+    color: #5474FD;
+  }
+  footer .end-slogan {
+    line-height: 26px;
+    letter-spacing: 1.6px;
+    margin-top: 8px;
+  }
   .line1, .line2 {
+    display: none;
+  }
+  container {
+    width: 100%;
     display: none;
   }
 }
